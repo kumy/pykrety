@@ -1,0 +1,2167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/xml; charset=UTF-8"/>
+    <title>GeoKrety: My Page</title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/templates/krety-handheld.css" media="handheld"/>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext,cyrillic-ext,greek-ext,vietnamese,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link rel="author" href="https://plus.google.com/100314116846204554033/"/>
+    <script type="text/javascript" src="/funkcje-3.min.js"></script>
+    <script type="text/javascript" src="sorttable.min.js"></script>
+    <script type="text/javascript" src="/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/ajaxtooltip-1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/templates/krety.css?ver=19.6" media="screen"/>
+
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+
+
+<div id="top"><a href="http://geokrety.org/">
+
+    <img src="templates/logo/logo-puste.png" border="0" alt="logo aa:  1110"/>
+</a> My Page
+</div>
+<div id="lewo" itemprop="breadcrumb">
+
+    <ul class="dropdown spritemenu greenmenu">
+        <li><img class="menu-home" src="/_.gif" alt="*"/> <a href="/index.php">Home</a></li>
+        <li><img class="menu-flag_add" src="/_.gif" alt="*"/> <a href="/ruchy.php"><strong>Log a
+            GeoKret</strong></a><br/>
+            <span class="bardzomale" style="padding-left:21px">no need to register!</span></li>
+        <li><img class="menu-add" src="/_.gif" alt="*"/> <a href="register.php">Register a new GeoKret</a></li>
+        <li class="dir"><img class="menu-user" src="/_.gif" alt="*"/> My account
+            <ul>
+                <li><img class="menu-user" src="/_.gif" alt="*"/> <a href="/mypage.php">Account details</a></li>
+                <li><img class="menu-strz" src="/_.gif" alt="*"/> <a href="/mypage.php?co=5">Geokrets in my
+                    inventory</a></li>
+                <li><img class="menu-strz" src="/_.gif" alt="*"/> <a href="/mypage.php?co=1">My geokrets</a></li>
+                <li><img class="menu-strz" src="/_.gif" alt="*"/> <a href="/mypage.php?co=2">Watched geokrets</a></li>
+                <li><img class="menu-strz" src="/_.gif" alt="*"/> <a href="/mypage.php?co=3">My recent logs</a></li>
+                <li><img class="menu-strz" src="/_.gif" alt="*"/> <a href="/mypage.php?co=4">Recent moves of my
+                    geokrets</a></li>
+                <li><img class="menu-photos" src="/_.gif" alt="*"/> <a href="/galeria.php?f=myown">My photos</a></li>
+                <li><img class="menu-photos" src="/_.gif" alt="*"/> <a href="/galeria.php?f=mygeokrets">Photos of my
+                    geokrets</a></li>
+                <li><img class="menu-strz" src="/_.gif" alt="*"/> <a href="/mapka_kretow.php">Where are my geokrets?</a>
+                </li>
+            </ul>
+        </li>
+
+        <li><img class="menu-exit" src="/_.gif" alt="*"/> <a href="longin.php?logout=1">Logout</a></li>
+    </ul>
+    <ul class="dropdown spritemenu innemenu">
+        <li><img class="menu-search" src="/_.gif" alt="*"/> <a href="/szukaj.php">Search</a></li>
+        <li><img class="menu-news" src="/_.gif" alt="*"/> <a href="/recentlogs.php">Recent logs</a></li>
+        <li><img class="menu-photos" src="/_.gif" alt="*"/> <a href="/galeria.php">Photo gallery</a></li>
+        <li class="dir"><img class="menu-stat" src="/_.gif" alt="*"/> Statistics
+            <ul>
+                <li><img class="menu-stat" src="/_.gif" alt="*"/> <a href="/statystyczka.php">Statistics</a></li>
+                <li><img class="menu-stat" src="/_.gif" alt="*"/> <a href="/country_stat.php">Stats by country</a></li>
+                <li><img class="menu-lost" src="/_.gif" alt="*"/> <a href="/lost.php">Probably lost geokrets</a></li>
+            </ul>
+        </li>
+        <li><img class="menu-down" src="/_.gif" alt="*"/> <a href="/download.php">Download</a></li>
+        <li><img class="menu-newspaper" src="/_.gif" alt="*"/> <a href="/niusy.php">News</a></li>
+        <li class="dir"><img class="menu-help16" src="/_.gif" alt="*"/> Help / Docs
+            <ul>
+                <li><img class="menu-help16" src="/_.gif" alt="*"/> <a href="help.php">Help</a></li>
+                <li><img class="menu-help16" src="/_.gif" alt="*"/> <a href="/help.php">Help in english</a></li>
+                <li><img class="menu-help16" src="/_.gif" alt="*"/> <a href="/molehole.php">Moleholes and GK hotels</a>
+                </li>
+                <li><img class="menu-newspaper" src="/_.gif" alt="*"/> <a href="presscorner.php">Press corner</a></li>
+                <li><img class="menu-help16" src="/_.gif" alt="*"/> <a href="termsofuse.php">Terms of use</a></li>
+                <li><img class="menu-code" src="/_.gif" alt="*"/> <a href="api.php">GK interface / api</a></li>
+            </ul>
+        </li>
+        <li class="dir"><img class="menu-lab16" src="/_.gif" alt="*"/> Side products
+            <ul>
+                <li><img class="menu-mapka" src="/_.gif" alt="*"/> <a href="/geomapa.php">Map of caches</a></li>
+                <li><img class="menu-mapka" src="/_.gif" alt="*"/> <a href="http://GeokretyMap.org/">GeokretyMap.org</a>
+                </li>
+                <li><img class="menu-lab16" src="/_.gif" alt="*"/> <a href="http://userscripts.org/scripts/show/59670">GeoKrety
+                    Toolbox</a></li>
+                <li><img class="menu-lab16" src="/_.gif" alt="*"/> <a href="/go2geo/">Waypoint resolver</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <ul class="dropdown flagi innemenu">
+        <li>
+            <a href="lang.php?lang=en_US.UTF-8" title="English"><img class="flag-gb" src="/_.gif" alt="EN"/></a>
+            <a href="lang.php?lang=pl_PL.UTF-8" title="Polski"><img class="flag-pl" src="/_.gif" alt="PL"/></a>
+            <a href="lang.php?lang=de_DE.UTF-8" title="Deutsch"><img class="flag-de" src="/_.gif" alt="DE"/></a>
+            <a href="lang.php?lang=fr_FR.UTF-8" title="Français"><img class="flag-fr" src="/_.gif" alt="FR"/></a>
+            <a href="lang.php?lang=es_ES.UTF-8" title="Español"><img class="flag-es" src="/_.gif" alt="ES"/></a>
+            <a href="lang.php?lang=cs_CZ.UTF-8" title="Česky"><img class="flag-cz" src="/_.gif" alt="CS"/></a>
+            <a href="lang.php?lang=sk_SK.UTF-8" title="Slovenčina"><img class="flag-sk" src="/_.gif" alt="SK"/></a>
+            <a href="lang.php?lang=it_IT.UTF-8" title="Italiano"><img class="flag-it" src="/_.gif" alt="IT"/></a>
+            <a href="lang.php?lang=ro_RO.UTF-8" title="Română"><img class="flag-ro" src="/_.gif" alt="RO"/></a>
+            <a href="lang.php?lang=da_DK.UTF-8" title="Dansk"><img class="flag-dk" src="/_.gif" alt="DK"/></a>
+            <a href="lang.php?lang=pt_PT.UTF-8" title="Português"><img class="flag-pt" src="/_.gif" alt="PT"/></a>
+            <a href="lang.php?lang=nl_NL.UTF-8" title="Nederlands"><img class="flag-nl" src="/_.gif" alt="NL"/></a>
+            <a href="lang.php?lang=sv_SE.UTF-8" title="Svenska"><img class="flag-se" src="/_.gif" alt="SV"/></a>
+            <a href="lang.php?lang=fi_FI.UTF-8" title="Suomi"><img class="flag-fi" src="/_.gif" alt="FI"/></a>
+            <a href="lang.php?lang=et_EE.UTF-8" title="Eesti"><img class="flag-ee" src="/_.gif" alt="ET"/></a>
+            <a href="lang.php?lang=hu_HU.UTF-8" title="Magyar"><img class="flag-hu" src="/_.gif" alt="HU"/></a>
+            <a href="lang.php?lang=lt_LT.UTF-8" title="Lietuvių"><img class="flag-lt" src="/_.gif" alt="LT"/></a>
+            <a href="lang.php?lang=lv_LV.UTF-8" title="Latviešu"><img class="flag-lv" src="/_.gif" alt="LV"/></a>
+            <a href="lang.php?lang=uk_UA.UTF-8" title="Українська"><img class="flag-ua" src="/_.gif" alt="UK"/></a>
+            <a href="lang.php?lang=bg_BG.UTF-8" title="Български"><img class="flag-bg" src="/_.gif" alt="BG"/></a>
+            <a href="lang.php?lang=sq_AL.UTF-8" title="Shqip"><img class="flag-al" src="/_.gif" alt="SQ"/></a>
+            <a href="lang.php?lang=el_GR.UTF-8" title="Ελληνικά"><img class="flag-gr" src="/_.gif" alt="EL"/></a>
+            <a href="lang.php?lang=th_TH.UTF-8" title="ไทย"><img class="flag-th" src="/_.gif" alt="TH"/></a>
+            <a href="lang.php?lang=tl_PH.UTF-8" title="Pilipinas"><img class="flag-ph" src="/_.gif" alt="TL"/></a>
+            <a href="lang.php?lang=ca_ES.UTF-8" title="Català"><img class="flag-ca" src="/_.gif" alt="CA"/></a>
+            <a href="lang.php?lang=zh_CN.UTF-8" title="Chinese"><img class="flag-cn" src="/_.gif" alt="ZH"/></a>
+            <a href="lang.php?lang=ru_RU.UTF-8" title="Русский"><img class="flag-ru" src="/_.gif" alt="RU"/></a>
+        </li>
+    </ul>
+
+    <ul class="dropdown innemenu">
+        <li><a href="help.php#about">About</a></li>
+        <li><a href="halloffame.php">Hall of fame</a></li>
+    </ul>
+
+</div>
+
+<div itemprop="mainContentOfPage" id="prawo">
+
+<!-- tresc -->
+<h2>kumy's geokrets</h2>
+
+<div style="text-align:right;margin:15px auto 15px auto; ">Showing items 98 - 1 (of 98) :: &lt; [<a
+        href="/mypage.php?co=1&amp;page=2">2</a> <a href="/mypage.php?co=1&amp;page=1">1</a>] &gt; :: <strong><a
+        href="/mypage.php?co=1&amp;page=0">Show all</a></strong></div>
+
+<table class='sortable' style='table-layout: fixed'>
+<thead>
+<tr>
+    <th style='width:60px'></th>
+    <th style='width:30%'>Name</th>
+
+    <th style='width:28%'>Cache</th>
+
+    <th style='width:22%'>Last action</th>
+    <th style='width:13%'><img src='/templates/log_icons/dist.gif' alt='Distance travelled' title='Distance travelled'/>
+    </th>
+    <th style='width:7%'><img src='/templates/log_icons/2caches.png' alt='Number of visited caches'
+                              title='Number of visited caches'/></th>
+    <th style='width:60px' class='st_no'></th>
+</tr>
+</thead>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47454">GKB95E</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394959hqdaf.jpg|obrazki/1415394959hqdaf.jpg'/><br/><span
+            class="bardzomale">CoinCoin</span></td>
+    <td data-sort='frGC3GWK8'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC3GWK8'>GC3GWK8</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='3'>3<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47454'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=EFVDBU"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47453">GKB95D</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14153949489u2nl.jpg|obrazki/14153949489u2nl.jpg'/><br/><span
+            class="bardzomale">Rudolphe</span></td>
+    <td data-sort='frGC3GWK8'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC3GWK8'>GC3GWK8</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='3'>3<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47453'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=DXHGVK"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=47452">GKB95C</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394937ck2um.jpg|obrazki/1415394937ck2um.jpg'/><br/><span
+            class="bardzomale">Tyranos</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;de la main a la main&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=27342'>clode88</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47452'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=PQIF7V"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=47451">GKB95B</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394925qtsdd.jpg|obrazki/1415394925qtsdd.jpg'/><br/><span
+            class="bardzomale">Ruby</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;De la main a la main&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=27342'>clode88</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47451'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=TH5YSR"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47450">GKB95A</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/141539491183qj5.jpg|obrazki/141539491183qj5.jpg'/><br/><span
+            class="bardzomale">Concerto</span></td>
+    <td data-sort='frGC5C1PJ'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C1PJ'>GC5C1PJ</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47450'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=P4VVRV"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=47449">GKB959</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14153948954f9pa.jpg|obrazki/14153948954f9pa.jpg'/><br/><span
+            class="bardzomale">Froggy</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;De la main a la main&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=27342'>clode88</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47449'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=X5GXIP"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47448">GKB958</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394884z7h59.jpg|obrazki/1415394884z7h59.jpg'/><br/><span
+            class="bardzomale">CrasyFrog</span></td>
+    <td data-sort='frGC5C1PJ'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C1PJ'>GC5C1PJ</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47448'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=783KBA"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47447">GKB957</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394872mrr11.jpg|obrazki/1415394872mrr11.jpg'/><br/><span
+            class="bardzomale">Helen's Hooves</span></td>
+    <td data-sort='frGC5BRQK'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5BRQK'>GC5BRQK</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47447'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=VQSUZX"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=47446">GKB956</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394862jy8sr.jpg|obrazki/1415394862jy8sr.jpg'/><br/><span
+            class="bardzomale">The Camel</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='1'><span class='att_js' title='&lt;b&gt;2014-11-09 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> Yesterday<span class='bardzomale'><br/><a
+            href='mypage.php?userid=27342'>clode88</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47446'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=DFUCSA"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47445">GKB955</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394851h7sbf.jpg|obrazki/1415394851h7sbf.jpg'/><br/><span
+            class="bardzomale">CrocoFlash</span></td>
+    <td data-sort='frGC5BRQK'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5BRQK'>GC5BRQK</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47445'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=DZA96W"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=47444">GKB954</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394816lrjte.jpg|obrazki/1415394816lrjte.jpg'/><br/><span
+            class="bardzomale">Hippo-Cousteau</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;De la main a la main&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=27342'>clode88</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47444'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=EMT3KY"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47443">GKB953</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394806a6bzk.jpg|obrazki/1415394806a6bzk.jpg'/><br/><span
+            class="bardzomale">Gorgious</span></td>
+    <td data-sort='frGC5BRQK'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5BRQK'>GC5BRQK</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47443'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=22IBZL"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47442">GKB952</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394794xv83l.jpg|obrazki/1415394794xv83l.jpg'/><br/><span
+            class="bardzomale">Etno</span></td>
+    <td data-sort='frGC5C14M'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C14M'>GC5C14M</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47442'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=QA2H17"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='018'><span title=''><img src='templates/log_icons/0/18.png' alt='' width='37' height='37'
+                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=47441">GKB951</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14153947834wby4.jpg|obrazki/14153947834wby4.jpg'/><br/><span
+            class="bardzomale">Candy</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.69915/6.84577<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.69915&amp;origin_long=6.84577&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='3'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-07 22:12:53&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Born here :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/25.png' alt='Dipped in'/> 3&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47441'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=LEZG3P"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='018'><span title=''><img src='templates/log_icons/0/18.png' alt='' width='37' height='37'
+                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=47440">GKB950</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1415394768w6ne3.jpg|obrazki/1415394768w6ne3.jpg'/><br/><span
+            class="bardzomale">Bud</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.69915/6.84577<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.69915&amp;origin_long=6.84577&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='3'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-07 22:12:41&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Born here :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/25.png' alt='Dipped in'/> 3&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47440'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=UDVCEK"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='018'><span title=''><img src='templates/log_icons/0/18.png' alt='' width='37' height='37'
+                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=47276">GKB8AC</a><br/><span class="bardzomale">Space Octopus</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.69915/6.84577<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.69915&amp;origin_long=6.84577&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='8'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-02 23:44:32&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Born here :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/25.png' alt='Dipped in'/> 8&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47276'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=DWNE3K"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47275">GKB8AB</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14149655932rv3m.jpg|obrazki/14149655932rv3m.jpg'/><br/><span
+            class="bardzomale">Space Octopus</span></td>
+    <td data-sort='frGC5C1PJ'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C1PJ'>GC5C1PJ</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47275'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=8HUHET"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='018'><span title=''><img src='templates/log_icons/0/18.png' alt='' width='37' height='37'
+                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=47274">GKB8AA</a><br/><span class="bardzomale">Space Octopus</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.69915/6.84577<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.69915&amp;origin_long=6.84577&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='8'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-02 22:56:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Born here :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/25.png' alt='Dipped in'/> 8&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47274'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=DGIH9R"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='018'><span title=''><img src='templates/log_icons/0/18.png' alt='' width='37' height='37'
+                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=47273">GKB8A9</a><br/><span class="bardzomale">Mouton</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.69915/6.84577<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.69915&amp;origin_long=6.84577&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='8'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-02 22:43:01&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Born here :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/25.png' alt='Dipped in'/> 8&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47273'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=ETBZ1X"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=47272">GKB8A8</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1414970353vmqvk.jpg|obrazki/1414970353vmqvk.jpg'/><br/><span
+            class="bardzomale">Mouton</span></td>
+    <td data-sort='frGC5C14M'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C14M'>GC5C14M</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=47272'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=LV8UP5"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46941">GKB75D</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1414962744m7b8y.jpg|obrazki/1414962744m7b8y.jpg'/><br/><span
+            class="bardzomale">Ours Brun</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;De la main a la main&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=27342'>clode88</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46941'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=6WV4P1"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46940">GKB75C</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1414962379mp8li.jpg|obrazki/1414962379mp8li.jpg'/><br/><span
+            class="bardzomale">Giraf</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;De la main a la main&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=27342'>clode88</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46940'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=AEXXAZ"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46939">GKB75B</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1414970341dmzts.jpg|obrazki/1414970341dmzts.jpg'/><br/><span
+            class="bardzomale">quasimodo</span></td>
+    <td data-sort='frGC5C14M'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C14M'>GC5C14M</a></td>
+    <td class='mid' data-sort='2'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-08 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Et hop!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 2&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46939'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=A6K9AW"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='019'><span title='Freshman mole'><img src='templates/log_icons/0/19.png'
+                                                                     alt='Freshman mole' width='37' height='37'
+                                                                     border='0'/></span></td>
+    <td><a href="konkret.php?id=46938">GKB75A</a><br/><span class="bardzomale">Mini ball</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='36'><span class='att_js' title='&lt;b&gt;2014-10-05 20:24:13&lt;/b&gt;'><img
+            src='templates/log_icons/0/29.png' alt=''/> 36&nbsp;days&nbsp;ago<span class='bardzomale'></span></span>
+    </td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>0</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46938'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=3TSQXR"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='019'><span title='Freshman mole'><img src='templates/log_icons/0/19.png'
+                                                                     alt='Freshman mole' width='37' height='37'
+                                                                     border='0'/></span></td>
+    <td><a href="konkret.php?id=46684">GKB65C</a><br/><span class="bardzomale">c:geo tests</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='59'><span class='att_js' title='&lt;b&gt;2014-09-12 17:23:41&lt;/b&gt;'><img
+            src='templates/log_icons/0/29.png' alt=''/> 59&nbsp;days&nbsp;ago<span class='bardzomale'></span></span>
+    </td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>0</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46684'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=ISC1YD"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='410'><span title=''><img src='templates/log_icons/4/10.png' alt='' width='37' height='37'
+                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=46465">GKB581</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14097736673tzjb.png|obrazki/14097736673tzjb.png'/><br/><span
+            class="bardzomale">c:geo Two</span></td>
+    <td data-sort='frOX5BRQK'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href="http://www.opencaching.com/#geocache/OX5BRQK">OX5BRQK</a><br/><span class="bardzomale"
+                                                                                      title='Chemin de l' Escourachie'>Chemin
+        de l'Escourac...<br/></span></td>
+    <td class='mid' data-sort='68'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-03 22:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Dropped here for the c:geo unit tests.&lt;/p&gt;'><img
+            src='templates/log_icons/4/20.png' alt='Dropped to'/> 68&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46465'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=DBREB1"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46464">GKB580</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14097735378mgfc.png|obrazki/14097735378mgfc.png'/><br/><span
+            class="bardzomale">c:geo One</span></td>
+    <td data-sort='frOX5BRQK'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href="http://www.opencaching.com/#geocache/OX5BRQK">OX5BRQK</a><br/><span class="bardzomale"
+                                                                                      title='Chemin de l' Escourachie'>Chemin
+        de l'Escourac...<br/></span></td>
+    <td class='mid' data-sort='68'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-03 22:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Dropped here for the c:geo unit tests.&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 68&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46464'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=MM6XE4"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46394">GKB53A</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409517841dvv1b.jpg|obrazki/1409517841dvv1b.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 15/15</span></td>
+    <td data-sort='frGC50HPE'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC50HPE'>GC50HPE</a></td>
+    <td class='mid' data-sort='65'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-06 17:20:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;bon voyage!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 65&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='18'>18<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46394'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=P9J7HX"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46393">GKB539</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14095177327eh9w.jpg|obrazki/14095177327eh9w.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 14/15</span></td>
+    <td data-sort='frGC4E9T9'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC4E9T9'>GC4E9T9</a></td>
+    <td class='mid' data-sort='26'><span class='att_js' title='&lt;b&gt;2014-10-15 14:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 26&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='16'>16<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46393'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=KIL4UR"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46392">GKB538</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409517851bjpan.jpg|obrazki/1409517851bjpan.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 13/15</span></td>
+    <td data-sort='frGC17YZZ'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC17YZZ'>GC17YZZ</a></td>
+    <td class='mid' data-sort='3'><span class='att_js' title='&lt;b&gt;2014-11-07 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 3&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='94'>94<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46392'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=FK9N8A"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46391">GKB537</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409517782s9fbr.jpg|obrazki/1409517782s9fbr.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 12/15</span></td>
+    <td data-sort='se'><img src='templates/country_codes/se.png' alt='se' title='SE' width='16' height='11'/>
+        59.42940/18.05742<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=59.42940&amp;origin_long=18.05742&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='3'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-07 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Dropped this piece of puzzle off at a more frequently visited TB Hotel, GC5D581.&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 3&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) Qozze</span></span>
+    </td>
+    <td class='mid' data-sort='1933'>1933<span class='bardzomale'> km</span></td>
+    <td class='mid'>5</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46391'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=4IZIMK"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46390">GKB536</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409516888tmh1k.jpg|obrazki/1409516888tmh1k.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 11/15</span></td>
+    <td data-sort='frGC30AJJ'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC30AJJ'>GC30AJJ</a></td>
+    <td class='mid' data-sort='19'><span class='att_js' title='&lt;b&gt;2014-10-22 11:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 19&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='31'>31<span class='bardzomale'> km</span></td>
+    <td class='mid'>4</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46390'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=M8Z9ET"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46389">GKB535</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409516839fbtj8.jpg|obrazki/1409516839fbtj8.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 10/15</span></td>
+    <td data-sort='seGC37NX9'><img src='templates/country_codes/se.png' alt='se' title='SE' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC37NX9'>GC37NX9</a></td>
+    <td class='mid' data-sort='64'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-07 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Dropped of for further travels&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 64&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26640'>Odberger</a></span></span></td>
+    <td class='mid' data-sort='1921'>1921<span class='bardzomale'> km</span></td>
+    <td class='mid'>4</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46389'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=UPZHGD"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46388">GKB534</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496954rgdek.jpg|obrazki/1409496954rgdek.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 9/15</span></td>
+    <td data-sort='frGC2P1FR'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC2P1FR'>GC2P1FR</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 19:26:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Bon voyage :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='13'>13<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46388'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=7NZXGH"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46387">GKB533</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496954rx82f.jpg|obrazki/1409496954rx82f.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 8/15</span></td>
+    <td data-sort='frGC5C14M'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C14M'>GC5C14M</a></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 22:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;En route.&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46387'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=GPXZM6"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46386">GKB532</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14094969284c15i.jpg|obrazki/14094969284c15i.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 7/15</span></td>
+    <td data-sort='frGC4CWM1'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC4CWM1'>GC4CWM1</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 15:45:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Debut du voyage :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='15'>15<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46386'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=ZLT2UC"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46385">GKB531</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14094968762d8m8.jpg|obrazki/14094968762d8m8.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 6/15</span></td>
+    <td data-sort='frGC2P1FR'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC2P1FR'>GC2P1FR</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 19:26:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Bon voyage :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='13'>13<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46385'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=3P91BV"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46384">GKB530</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496876yr43n.jpg|obrazki/1409496876yr43n.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 5/15</span></td>
+    <td data-sort='seGC558KY'><img src='templates/country_codes/se.png' alt='se' title='SE' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC558KY'>GC558KY</a></td>
+    <td class='mid' data-sort='51'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-20 11:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Dropped this one in a cache that was release at en event in Stockholm, Sweden&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 51&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26640'>Odberger</a></span></span></td>
+    <td class='mid' data-sort='1927'>1927<span class='bardzomale'> km</span></td>
+    <td class='mid'>4</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46384'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=87KVER"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46383">GKB52F</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14094968421zjv8.jpg|obrazki/14094968421zjv8.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 4/15</span></td>
+    <td data-sort='frGC5C14M'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C14M'>GC5C14M</a></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 22:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;En route.&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46383'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=ZMH83S"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='018'><span title=''><img src='templates/log_icons/0/18.png' alt='' width='37' height='37'
+                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=46382">GKB52E</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496800wanf1.jpg|obrazki/1409496800wanf1.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 3/15</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.69915/6.84577<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.69915&amp;origin_long=6.84577&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 15:46:31&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Né ici&lt;/p&gt;'><img
+            src='templates/log_icons/0/25.png' alt='Dipped in'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46382'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=YN2N1M"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46381">GKB52D</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496781m3rnw.jpg|obrazki/1409496781m3rnw.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 2/15</span></td>
+    <td data-sort='frGC5C14M'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C14M'>GC5C14M</a></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 22:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;En route.&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46381'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=DNBNYE"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46380">GKB52C</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496756gn243.jpg|obrazki/1409496756gn243.jpg'/><br/><span
+            class="bardzomale">Puzzle WB - 1/15</span></td>
+    <td data-sort='frGC11B6G'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC11B6G'>GC11B6G</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 16:30:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Bon voyage :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='15'>15<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46380'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=42UWJJ"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46379">GKB52B</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496688b9p1g.jpg|obrazki/1409496688b9p1g.jpg'/><br/><span
+            class="bardzomale">Faitexcus</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='33'><span class='att_js' title='&lt;b&gt;2014-10-08 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 33&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) famille c-b</span></span>
+    </td>
+    <td class='mid' data-sort='19'>19<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46379'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=I7LC9G"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46378">GKB52A</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14094966793ywds.jpg|obrazki/14094966793ywds.jpg'/><br/><span
+            class="bardzomale">Totally Spies</span></td>
+    <td data-sort='frGC3H22A'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC3H22A'>GC3H22A</a></td>
+    <td class='mid' data-sort='65'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-06 17:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Bon voyage!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 65&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='19'>19<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46378'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=X8IZ4G"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='018'><span title=''><img src='templates/log_icons/0/18.png' alt='' width='37' height='37'
+                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=46377">GKB529</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496671cdpga.jpg|obrazki/1409496671cdpga.jpg'/><br/><span
+            class="bardzomale">St-Vallier rock</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.69915/6.84577<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.69915&amp;origin_long=6.84577&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 15:38:02&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Né ici&lt;/p&gt;'><img
+            src='templates/log_icons/0/25.png' alt='Dipped in'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46377'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=RPEYDE"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46375">GKB527</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14094966631ua4e.jpg|obrazki/14094966631ua4e.jpg'/><br/><span
+            class="bardzomale">Pingui</span></td>
+    <td data-sort='frGC16RRR'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC16RRR'>GC16RRR</a></td>
+    <td class='mid' data-sort='20'><span class='att_js' title='&lt;b&gt;2014-10-21 09:30:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 20&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='22'>22<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46375'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=EPU1SA"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46374">GKB526</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1409496632l3t5f.jpg|obrazki/1409496632l3t5f.jpg'/><br/><span
+            class="bardzomale">Brown Bear</span></td>
+    <td data-sort='seGC1BBH7'><img src='templates/country_codes/se.png' alt='se' title='SE' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC1BBH7'>GC1BBH7</a></td>
+    <td class='mid' data-sort='3'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-07 18:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Dropped in the deep, dark forest. As Canadian as it gets around here.&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 3&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) ChriBli</span></span>
+    </td>
+    <td class='mid' data-sort='1943'>1943<span class='bardzomale'> km</span></td>
+    <td class='mid'>6</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46374'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=TMSTYR"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46077">GKB3FD</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408984394km5em.jpg|obrazki/1408984394km5em.jpg'/><br/><span
+            class="bardzomale">Dice</span></td>
+    <td data-sort='frGC30AXG'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC30AXG'>GC30AXG</a></td>
+    <td class='mid' data-sort='69'><span class='att_js' title='&lt;b&gt;2014-09-02 17:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 69&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26685'>benfox06</a></span></span></td>
+    <td class='mid' data-sort='2'>2<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46077'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=Y9QYPP"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46076">GKB3FC</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408984421mszrd.jpg|obrazki/1408984421mszrd.jpg'/><br/><span
+            class="bardzomale">Shere Khan</span></td>
+    <td data-sort='frGC2R1FC'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC2R1FC'>GC2R1FC</a></td>
+    <td class='mid' data-sort='27'><span class='att_js' title='&lt;b&gt;2014-10-14 10:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 27&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='13'>13<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46076'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=CV4MIG"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46075">GKB3FB</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14089844042cf3d.jpg|obrazki/14089844042cf3d.jpg'/><br/><span
+            class="bardzomale">Scuba diver</span></td>
+    <td data-sort='frGC50HPE'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC50HPE'>GC50HPE</a></td>
+    <td class='mid' data-sort='65'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-06 17:20:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;bon voyage!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 65&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='18'>18<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46075'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=G5KTMH"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46074">GKB3FA</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408983753tadpv.jpg|obrazki/1408983753tadpv.jpg'/><br/><span
+            class="bardzomale">Rainbow loom</span></td>
+    <td data-sort='frGC5BYXD'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5BYXD'>GC5BYXD</a></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Tout commence ici...&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='2'>2<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46074'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=8Z9ZGP"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46073">GKB3F9</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408982496ds97m.jpg|obrazki/1408982496ds97m.jpg'/><br/><span
+            class="bardzomale">BN Head - 10</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='16'><span class='att_js' title='&lt;b&gt;2014-10-25 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 16&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) Easylov33</span></span>
+    </td>
+    <td class='mid' data-sort='6'>6<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46073'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=448S2Z"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46072">GKB3F8</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14089824963c5y4.jpg|obrazki/14089824963c5y4.jpg'/><br/><span
+            class="bardzomale">BN Head - 9</span></td>
+    <td data-sort='frGC2P1FR'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC2P1FR'>GC2P1FR</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 19:26:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Bon voyage :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='13'>13<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46072'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=5M1ZMW"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46071">GKB3F7</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408982493es8q3.jpg|obrazki/1408982493es8q3.jpg'/><br/><span
+            class="bardzomale">BN Head - 8</span></td>
+    <td data-sort='frGC59PPB'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC59PPB'>GC59PPB</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 15:19:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Debut du voyage :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='14'>14<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46071'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=IIH867"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46070">GKB3F6</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408982485fc2pm.jpg|obrazki/1408982485fc2pm.jpg'/><br/><span
+            class="bardzomale">BN Head - 7</span></td>
+    <td data-sort='frGC5BYWV'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5BYWV'>GC5BYWV</a></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Tout commence ici...&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='3'>3<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46070'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=XTL4XA"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46069">GKB3F5</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408982474qriq7.jpg|obrazki/1408982474qriq7.jpg'/><br/><span
+            class="bardzomale">BN Head - 6</span></td>
+    <td data-sort='frGC5BYXD'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5BYXD'>GC5BYXD</a></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Tout commence ici...&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='2'>2<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46069'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=U8Y2P6"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46068">GKB3F4</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408982458qkkmz.jpg|obrazki/1408982458qkkmz.jpg'/><br/><span
+            class="bardzomale">BN Head - 5</span></td>
+    <td data-sort='frGC20C8D'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC20C8D'>GC20C8D</a></td>
+    <td class='mid' data-sort='33'><span class='att_js' title='&lt;b&gt;2014-10-08 19:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 33&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) Tuliperia</span></span>
+    </td>
+    <td class='mid' data-sort='43'>43<span class='bardzomale'> km</span></td>
+    <td class='mid'>10</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46068'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=SD55IN"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46067">GKB3F3</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14089824537ch5a.jpg|obrazki/14089824537ch5a.jpg'/><br/><span
+            class="bardzomale">BN Head - 4</span></td>
+    <td data-sort='frGC5C14M'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5C14M'>GC5C14M</a></td>
+    <td class='mid' data-sort='71'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-31 22:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;En route.&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 71&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46067'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=V253Q8"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46066">GKB3F2</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408982449cf8b1.jpg|obrazki/1408982449cf8b1.jpg'/><br/><span
+            class="bardzomale">BN Head - 3</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='22'><span class='att_js' title='&lt;b&gt;2014-10-19 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 22&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) rody04</span></span>
+    </td>
+    <td class='mid' data-sort='2'>2<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46066'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=4KZVFX"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46065">GKB3F1</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408982445j87j8.jpg|obrazki/1408982445j87j8.jpg'/><br/><span
+            class="bardzomale">BN Head - 2</span></td>
+    <td data-sort='frGC5G5A6'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC5G5A6'>GC5G5A6</a></td>
+    <td class='mid' data-sort='3'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-07 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;d&amp;eacute;pos&amp;eacute; avec une cr&amp;eacute;ation de cache :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 3&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=27342'>clode88</a></span></span></td>
+    <td class='mid' data-sort='7'>7<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46065'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=LR2GNK"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='015'><span title='Visiting'><img src='templates/log_icons/0/15.png' alt='Visiting'
+                                                                width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46064">GKB3F0</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/140898244074n7c.jpg|obrazki/140898244074n7c.jpg'/><br/><span
+            class="bardzomale">BN Head - 1</span></td>
+    <td data-sort='plOP85WB'><img src='templates/country_codes/pl.png' alt='pl' title='PL' width='16' height='11'/> <a
+            href="http://www.opencaching.pl/searchplugin.php?userinput=OP85WB">OP85WB</a><br/><span class="bardzomale">KAPLICZKA<br/></span>
+    </td>
+    <td class='mid' data-sort='0'><span class='att_js'
+                                        title='&lt;b&gt;2014-11-10 10:29:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;w keszyku KAPLICZKA  (autom. log oc.pl)&lt;/p&gt;'><img
+            src='templates/log_icons/0/25.png' alt='Dipped in'/> Today<span class='bardzomale'><br/><a
+            href='mypage.php?userid=21960'>HCkid</a></span></span></td>
+    <td class='mid' data-sort='1467'>1467<span class='bardzomale'> km</span></td>
+    <td class='mid'>8</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46064'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=TYEJSQ"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46053">GKB3E5</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408908008swyjv.jpg|obrazki/1408908008swyjv.jpg'/><br/><span
+            class="bardzomale">Yellow Marble</span></td>
+    <td data-sort='frGC50HPE'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC50HPE'>GC50HPE</a></td>
+    <td class='mid' data-sort='65'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-06 17:20:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;bon voyage!&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 65&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='18'>18<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46053'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=ZBJ5G8"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46052">GKB3E4</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408907996safk3.jpg|obrazki/1408907996safk3.jpg'/><br/><span
+            class="bardzomale">Gargamel</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.67928/6.85309<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.67928&amp;origin_long=6.85309&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='73'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-29 17:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;D&amp;eacute;pos&amp;eacute; dans une Ciste (8801)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 73&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='2'>2<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46052'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=SB9ZUG"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46051">GKB3E3</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408907870vvqns.jpg|obrazki/1408907870vvqns.jpg'/><br/><span
+            class="bardzomale">Pokemon 1</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='15'><span class='att_js' title='&lt;b&gt;2014-10-26 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 15&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) rjm49</span></span>
+    </td>
+    <td class='mid' data-sort='1079'>1079<span class='bardzomale'> km</span></td>
+    <td class='mid'>4</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46051'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=36CML8"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='013'><span title='Still in a cache'><img src='templates/log_icons/0/13.png'
+                                                                        alt='Still in a cache' width='37' height='37'
+                                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=46027">GKB3CB</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14088039893svu5.jpg|obrazki/14088039893svu5.jpg'/><br/><span
+            class="bardzomale">Champagne party - C7</span></td>
+    <td data-sort='frGC1ZTVN'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC1ZTVN'>GC1ZTVN</a></td>
+    <td class='mid' data-sort='43'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-28 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Vu&lt;/p&gt;'><img
+            src='templates/log_icons/0/23.png' alt='Seen in'/> 43&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26977'>thegillou</a></span></span></td>
+    <td class='mid' data-sort='11'>11<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46027'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=RPSRLR"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46026">GKB3CA</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803777wfyu7.jpg|obrazki/1408803777wfyu7.jpg'/><br/><span
+            class="bardzomale">Champagne party - C6</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='53'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-18 17:18:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Direction la Croatie.&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 53&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) coyote 4x4</span></span>
+    </td>
+    <td class='mid' data-sort='1'>1<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46026'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=Z28WYU"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46025">GKB3C9</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408804020akply.jpg|obrazki/1408804020akply.jpg'/><br/><span
+            class="bardzomale">Champagne party - C5</span></td>
+    <td data-sort='frGC2XWX6'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC2XWX6'>GC2XWX6</a></td>
+    <td class='mid' data-sort='78'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-24 18:18:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;debut du voyage !&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 78&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='12'>12<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46025'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=65N2UH"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='013'><span title='Still in a cache'><img src='templates/log_icons/0/13.png'
+                                                                        alt='Still in a cache' width='37' height='37'
+                                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=46024">GKB3C8</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803959y75gh.jpg|obrazki/1408803959y75gh.jpg'/><br/><span
+            class="bardzomale">Champagne party - C4</span></td>
+    <td data-sort='xyz'><img src='templates/country_codes/xyz.png' alt='xyz' title='XYZ' width='16' height='11'/>
+        43.50347/16.44707<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.50347&amp;origin_long=16.44707&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='25'><span class='att_js' title='&lt;b&gt;2014-10-16 16:35:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/23.png' alt='Seen in'/> 25&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) tangofloh</span></span>
+    </td>
+    <td class='mid' data-sort='774'>774<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46024'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=ANC9A1"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46023">GKB3C7</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803932ek8au.jpg|obrazki/1408803932ek8au.jpg'/><br/><span
+            class="bardzomale">Champagne party - C2</span></td>
+    <td data-sort='frGC2V058'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC2V058'>GC2V058</a></td>
+    <td class='mid' data-sort='30'><span class='att_js' title='&lt;b&gt;2014-10-11 11:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 30&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='4'>4<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46023'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=UR5W79"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46022">GKB3C6</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14088037269lbj7.jpg|obrazki/14088037269lbj7.jpg'/><br/><span
+            class="bardzomale">Champagne party - C3</span></td>
+    <td data-sort='plOP19E0'><img src='templates/country_codes/pl.png' alt='pl' title='PL' width='16' height='11'/> <a
+            href="http://www.opencaching.pl/searchplugin.php?userinput=OP19E0">OP19E0</a><br/><span class="bardzomale">Spadochron Wallsona<br/></span>
+    </td>
+    <td class='mid' data-sort='46'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-25 11:27:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Welcome in Poland1&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 46&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=2826'>wallson</a></span></span></td>
+    <td class='mid' data-sort='1376'>1376<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46022'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=V4C6R9"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46021">GKB3C5</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408804066btxl7.jpg|obrazki/1408804066btxl7.jpg'/><br/><span
+            class="bardzomale">Champagne party - C1</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='44'><span class='att_js' title='&lt;b&gt;2014-09-27 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 44&nbsp;days&nbsp;ago<span
+            class='bardzomale'><br/><a href='mypage.php?userid=26628'>LaFourmix</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46021'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=QDZ9ZS"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46019">GKB3C3</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803660bfc8f.jpg|obrazki/1408803660bfc8f.jpg'/><br/><span
+            class="bardzomale">Champagne party - Taittinger</span></td>
+    <td data-sort='frGC30AM2'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC30AM2'>GC30AM2</a></td>
+    <td class='mid' data-sort='74'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-28 15:10:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Go !&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 74&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='3'>3<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46019'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=Y7R9YC"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46018">GKB3C2</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803649vtejv.jpg|obrazki/1408803649vtejv.jpg'/><br/><span
+            class="bardzomale">Champagne party</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='18'><span class='att_js'
+                                         title='&lt;b&gt;2014-10-23 09:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Pris dans la cache de Mouans-Sartoux et &amp;agrave; d&amp;eacute;poser &amp;agrave; notre prochaine qu&amp;ecirc;te !!&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 18&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) ybochecha</span></span>
+    </td>
+    <td class='mid' data-sort='16'>16<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46018'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=6K1HL6"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46017">GKB3C1</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803646mzp8c.jpg|obrazki/1408803646mzp8c.jpg'/><br/><span
+            class="bardzomale">Champagne party</span></td>
+    <td data-sort='frGC59PPB'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC59PPB'>GC59PPB</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 15:19:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Debut du voyage :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='14'>14<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46017'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=CKBXJX"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46016">GKB3C0</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803635yvl4a.jpg|obrazki/1408803635yvl4a.jpg'/><br/><span
+            class="bardzomale">Champagne party</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='44'><span class='att_js' title='&lt;b&gt;2014-09-27 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 44&nbsp;days&nbsp;ago<span
+            class='bardzomale'><br/><a href='mypage.php?userid=26628'>LaFourmix</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46016'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=ZBSWP1"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46015">GKB3BF</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803630etr9x.jpg|obrazki/1408803630etr9x.jpg'/><br/><span
+            class="bardzomale">Champagne party</span></td>
+    <td data-sort='frGC2VA2T'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC2VA2T'>GC2VA2T</a></td>
+    <td class='mid' data-sort='77'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-25 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Bon voyage !&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 77&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='11'>11<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46015'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=N77KXD"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46014">GKB3BE</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803623ns1ce.jpg|obrazki/1408803623ns1ce.jpg'/><br/><span
+            class="bardzomale">Champagne party</span></td>
+    <td data-sort='frGC567P0'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC567P0'>GC567P0</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 11:10:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Champagne party d&amp;eacute;pos&amp;eacute; dans un lieu insolite. Malheureusement je n&#039;ai pas fait de f&amp;ecirc;te depuis, donc je n&#039;ai pas fait de photos &amp;agrave; poster pour sa mission :/&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26865'>oriwane</a></span></span></td>
+    <td class='mid' data-sort='179'>179<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46014'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=KK4YD7"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46013">GKB3BD</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803409r94jh.jpg|obrazki/1408803409r94jh.jpg'/><br/><span
+            class="bardzomale">Truc Bizarre</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='44'><span class='att_js' title='&lt;b&gt;2014-09-27 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 44&nbsp;days&nbsp;ago<span
+            class='bardzomale'><br/><a href='mypage.php?userid=26628'>LaFourmix</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46013'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=RG5UMK"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46012">GKB3BC</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803430julb3.jpg|obrazki/1408803430julb3.jpg'/><br/><span
+            class="bardzomale">Ruban Rose</span></td>
+    <td data-sort='plOP19E0'><img src='templates/country_codes/pl.png' alt='pl' title='PL' width='16' height='11'/> <a
+            href="http://www.opencaching.pl/searchplugin.php?userinput=OP19E0">OP19E0</a><br/><span class="bardzomale">Spadochron Wallsona<br/></span>
+    </td>
+    <td class='mid' data-sort='46'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-25 11:24:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Welcome in Poland&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 46&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=2826'>wallson</a></span></span></td>
+    <td class='mid' data-sort='1376'>1376<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46012'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=JD2P51"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46011">GKB3BB</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/140880350635g3k.jpg|obrazki/140880350635g3k.jpg'/><br/><span
+            class="bardzomale">Monkey</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='5'><span class='att_js' title='&lt;b&gt;2014-11-05 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 5&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=23638'>sebastien13960</a></span></span></td>
+    <td class='mid' data-sort='152'>152<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46011'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=QDGZVQ"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46010">GKB3BA</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14088033853wmz2.jpg|obrazki/14088033853wmz2.jpg'/><br/><span
+            class="bardzomale">Blue Marble</span></td>
+    <td data-sort='atGC3XK4C'><img src='templates/country_codes/at.png' alt='at' title='AT' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC3XK4C'>GC3XK4C</a></td>
+    <td class='mid' data-sort='7'><span class='att_js' title='&lt;b&gt;2014-11-03 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 7&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) BINS2340</span></span>
+    </td>
+    <td class='mid' data-sort='824'>824<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46010'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=9461U1"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46009">GKB3B9</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803368l5dmk.jpg|obrazki/1408803368l5dmk.jpg'/><br/><span
+            class="bardzomale">Panther</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='32'><span class='att_js'
+                                         title='&lt;b&gt;2014-10-09 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;[Geolocation] coords &amp;plusmn;20; altitude: null &amp;plusmn;null; timestamp: 1413140321575&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 32&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) Sam.Sky</span></span>
+    </td>
+    <td class='mid' data-sort='919'>919<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46009'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=19RJZU"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46008">GKB3B8</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803341vfyny.jpg|obrazki/1408803341vfyny.jpg'/><br/><span
+            class="bardzomale">Green Monster</span></td>
+    <td data-sort='frGC11B6G'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC11B6G'>GC11B6G</a></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 16:30:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Bon voyage :)&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 44&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='15'>15<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46008'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=WNBGXC"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46007">GKB3B7</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803311pn8t9.jpg|obrazki/1408803311pn8t9.jpg'/><br/><span
+            class="bardzomale">Sid</span></td>
+    <td data-sort='frGC52CDA'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC52CDA'>GC52CDA</a></td>
+    <td class='mid' data-sort='30'><span class='att_js'
+                                         title='&lt;b&gt;2014-10-11 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Premi&amp;egrave;re &amp;eacute;tape de la mission accomplie: voyager au bord de la mer !&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 30&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26726'>enkib</a></span></span></td>
+    <td class='mid' data-sort='36'>36<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46007'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=CFGAWB"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46006">GKB3B6</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803289n5mz4.jpg|obrazki/1408803289n5mz4.jpg'/><br/><span
+            class="bardzomale">Jolitorax</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='44'><span class='att_js' title='&lt;b&gt;2014-09-27 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 44&nbsp;days&nbsp;ago<span
+            class='bardzomale'><br/><a href='mypage.php?userid=26628'>LaFourmix</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46006'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=IZFJ6N"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46005">GKB3B5</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803267lyt3q.jpg|obrazki/1408803267lyt3q.jpg'/><br/><span
+            class="bardzomale">kangaroo</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='58'><span class='att_js' title='&lt;b&gt;2014-09-13 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 58&nbsp;days&nbsp;ago<span
+            class='bardzomale'><br/><a href='mypage.php?userid=26726'>enkib</a></span></span></td>
+    <td class='mid' data-sort='3'>3<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46005'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=UZ42XR"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46004">GKB3B4</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803243u88tv.jpg|obrazki/1408803243u88tv.jpg'/><br/><span
+            class="bardzomale">Koala</span></td>
+    <td data-sort='frGC2PTCY'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC2PTCY'>GC2PTCY</a></td>
+    <td class='mid' data-sort='11'><span class='att_js' title='&lt;b&gt;2014-10-30 15:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 11&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='22'>22<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46004'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=FE5I28"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46003">GKB3B3</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803231bgxz7.jpg|obrazki/1408803231bgxz7.jpg'/><br/><span
+            class="bardzomale">Sport Car</span></td>
+    <td data-sort='frGC4E1ET'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC4E1ET'>GC4E1ET</a></td>
+    <td class='mid' data-sort='58'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-13 15:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Hop panne d&#039;essence du coup un petit arr&amp;ecirc;t ici : GC4E1ET_laffaire-est-pliee&lt;br /&gt;
+&lt;br /&gt;
+Bon apr&amp;egrave;s coup je me dit que c&#039;est pas forcement la cache id&amp;eacute;ale (myst&amp;egrave;re) mais la boite est bien trouv&amp;eacute;e actuellement et un peu vide.&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 58&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26611'>Mayus53</a></span></span></td>
+    <td class='mid' data-sort='36'>36<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46003'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=E4LYA1"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46002">GKB3B2</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803145s7puk.jpg|obrazki/1408803145s7puk.jpg'/><br/><span
+            class="bardzomale">Hefty Smurf</span></td>
+    <td data-sort='frGC30AM7'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC30AM7'>GC30AM7</a></td>
+    <td class='mid' data-sort='74'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-28 15:40:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Go !&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 74&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='4'>4<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46002'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=RIS8LR"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=46001">GKB3B1</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14088031162t7tm.jpg|obrazki/14088031162t7tm.jpg'/><br/><span
+            class="bardzomale">Av&eacute; C&eacute;sar</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='44'><span class='att_js' title='&lt;b&gt;2014-09-27 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 44&nbsp;days&nbsp;ago<span
+            class='bardzomale'><br/><a href='mypage.php?userid=26628'>LaFourmix</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46001'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=3YVJ1Q"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=46000">GKB3B0</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/14088030952nury.jpg|obrazki/14088030952nury.jpg'/><br/><span
+            class="bardzomale">Falbala</span></td>
+    <td data-sort='frGC3689Y'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC3689Y'>GC3689Y</a></td>
+    <td class='mid' data-sort='77'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-25 16:24:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;bon voyage !&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 77&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='18'>18<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=46000'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=L1MQ5I"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='011'><span title='Travelling'><img src='templates/log_icons/0/11.png' alt='Travelling'
+                                                                  width='37' height='37' border='0'/></span></td>
+    <td><a href="konkret.php?id=45999">GKB3AF</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408804375virx5.jpg|obrazki/1408804375virx5.jpg'/><br/><span
+            class="bardzomale">Smurfette</span></td>
+    <td data-sort=''></td>
+    <td class='mid' data-sort='44'><span class='att_js'
+                                         title='&lt;b&gt;2014-09-27 11:44:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Signaler &amp;agrave; mon domicile&lt;/p&gt;'><img
+            src='templates/log_icons/0/21.png' alt='Grabbed from'/> 44&nbsp;days&nbsp;ago<span
+            class='bardzomale'><br/><a href='mypage.php?userid=26628'>LaFourmix</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=45999'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=CXD7RA"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='013'><span title='Still in a cache'><img src='templates/log_icons/0/13.png'
+                                                                        alt='Still in a cache' width='37' height='37'
+                                                                        border='0'/></span></td>
+    <td><a href="konkret.php?id=45998">GKB3AE</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803047zvxgn.jpg|obrazki/1408803047zvxgn.jpg'/><br/><span
+            class="bardzomale">Sleeping Beauty</span></td>
+    <td data-sort='frGC1ZTVN'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC1ZTVN'>GC1ZTVN</a></td>
+    <td class='mid' data-sort='43'><span class='att_js' title='&lt;b&gt;2014-09-28 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/23.png' alt='Seen in'/> 43&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26977'>thegillou</a></span></span></td>
+    <td class='mid' data-sort='11'>11<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=45998'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=YKRCIC"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=45997">GKB3AD</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408803015d9wm1.jpg|obrazki/1408803015d9wm1.jpg'/><br/><span
+            class="bardzomale">Gargamel</span></td>
+    <td data-sort='fr'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/>
+        43.69915/6.84577<br/><span class='bardzomale'>(<a
+                href='http://www.geocaching.com/seek/nearest.aspx?origin_lat=43.69915&amp;origin_long=6.84577&amp;dist=1'
+                title='Search for caches in this area on geocaching.com'>Search geocaching.com</a>)</span></td>
+    <td class='mid' data-sort='79'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-23 19:07:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Signaler &amp;agrave; mon domicile&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 79&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='0'>0<span class='bardzomale'> km</span></td>
+    <td class='mid'>1</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=45997'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=3VQW4V"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=45996">GKB3AC</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408802998u38qg.jpg|obrazki/1408802998u38qg.jpg'/><br/><span
+            class="bardzomale">Grand Schtroumpf</span></td>
+    <td data-sort='frGC1ZTVN'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC1ZTVN'>GC1ZTVN</a></td>
+    <td class='mid' data-sort='78'><span class='att_js'
+                                         title='&lt;b&gt;2014-08-24 12:00:00&lt;/b&gt;&lt;br&gt;&lt;p class=&#039;ttipTxt&#039;&gt;Bon voyage !&lt;/p&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 78&nbsp;days&nbsp;ago<span class='bardzomale'><br/><a
+            href='mypage.php?userid=26422'>kumy</a></span></span></td>
+    <td class='mid' data-sort='11'>11<span class='bardzomale'> km</span></td>
+    <td class='mid'>2</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=45996'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=LMGL78"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=45995">GKB3AB</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408802963qhtf1.jpg|obrazki/1408802963qhtf1.jpg'/><br/><span
+            class="bardzomale">Gargamel</span></td>
+    <td data-sort='frGC59PPB'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC59PPB'>GC59PPB</a></td>
+    <td class='mid' data-sort='27'><span class='att_js' title='&lt;b&gt;2014-10-14 11:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 27&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='14'>14<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=45995'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=FEJIQ4"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg0'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=45994">GKB3AA</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408802869rn8v1.jpg|obrazki/1408802869rn8v1.jpg'/><br/><span
+            class="bardzomale">Grand Schtroumpf</span></td>
+    <td data-sort='ruGCY9QJ'><img src='templates/country_codes/ru.png' alt='ru' title='RU' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GCY9QJ'>GCY9QJ</a></td>
+    <td class='mid' data-sort='7'><span class='att_js' title='&lt;b&gt;2014-11-03 13:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 7&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) BINS2340</span></span>
+    </td>
+    <td class='mid' data-sort='2816'>2816<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=45994'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=IBQXT5"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+<tr class='mg1'>
+    <td class='mid' data-sort='010'><span title='Inside a cache'><img src='templates/log_icons/0/10.png'
+                                                                      alt='Inside a cache' width='37' height='37'
+                                                                      border='0'/></span></td>
+    <td><a href="konkret.php?id=45993">GKB3A9</a><img src='templates/idcard.png' width='14' height='10' border='0'
+                                                      alt='photo' style='margin-left:12px' class='att_js'
+                                                      title='ajax|2|obrazki-male/1408804373btmin.jpg|obrazki/1408804373btmin.jpg'/><br/><span
+            class="bardzomale">Shrek</span></td>
+    <td data-sort='frGC30AM7'><img src='templates/country_codes/fr.png' alt='fr' title='FR' width='16' height='11'/> <a
+            href='http://www.geocaching.com/seek/cache_details.aspx?wp=GC30AM7'>GC30AM7</a></td>
+    <td class='mid' data-sort='20'><span class='att_js' title='&lt;b&gt;2014-10-21 12:00:00&lt;/b&gt;'><img
+            src='templates/log_icons/0/20.png' alt='Dropped to'/> 20&nbsp;days&nbsp;ago<span class='bardzomale'><br/>(?) gueta</span></span>
+    </td>
+    <td class='mid' data-sort='29'>29<span class='bardzomale'> km</span></td>
+    <td class='mid'>3</td>
+    <td class='mid'><a href='edit.php?co=geokret&amp;id=45993'><img src='templates/edit.png' alt='edit'
+                                                                    title='Edit this GeoKret' width='16' height='16'
+                                                                    border='0'/></a> <a href="/ruchy.php?nr=LPZV1N"><img
+            src="templates/usmiech.png" alt="log" title="Log this GeoKret" width="16" height="16" border="0"/></a></td>
+</tr>
+</table>
+
+<div style="text-align:right;margin:15px auto 15px auto; ">Showing items 98 - 1 (of 98) :: &lt; [<a
+        href="/mypage.php?co=1&amp;page=2">2</a> <a href="/mypage.php?co=1&amp;page=1">1</a>] &gt; :: <strong><a
+        href="/mypage.php?co=1&amp;page=0">Show all</a></strong></div>
+<!-- tresc -->
+</div>
+
+<div id="footnote">Made in Poland | by filips | <a href="http://validator.w3.org/check?uri=referer"
+                                                   class="male">xhtml</a> + <a class="male"
+                                                                               href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+    | <a class="male" href="http://geokrety.org/">geokrety.org</a> | <a class="male" href="/kontakt.php">contact</a> |
+    <a class="male" href="https://plus.google.com/100314116846204554033?rel=author">g+</a> | <a class="male"
+                                                                                                href="abuse.php">Report
+        abuse</a> | <a class="male" href="termsofuse.php">Terms of use</a> | <a href="/set_ssl.php"><img
+            src="templates/ssl.png" alt="ssl" border="0"/></a></div>
+
+</body>
+</html>
