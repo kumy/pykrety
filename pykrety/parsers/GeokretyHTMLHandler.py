@@ -113,7 +113,6 @@ def parse_html_owned(html):
     mg0 = soup.findAll('tr', attrs={'class': u'mg0'})
     mg1 = soup.findAll('tr', attrs={'class': u'mg1'})
     gks = mg0 + mg1
-    # print gk[0]
 
     geokrety = []
     for gk in gks:
@@ -132,7 +131,6 @@ def parse_html_owned(html):
             except IndexError:
                 pass
 
-            print tds[1].img['title'].split('|')[3]
             if tds[1].img:
                 geokret.set_featured_image(tds[1].img['title'].split('|')[3])
 

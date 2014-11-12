@@ -3,10 +3,12 @@
 from distutils.core import setup
 
 setup(name='pykrety',
-      version='1.0',
-      description='Python Distribution Utilities',
+      version='0.1',
+      description='Python wrapper around Geokrety.org',
       author='Mathieu Alorent',
       author_email='pykrety@kumy.net',
-      url='https://www.python.org/sigs/distutils-sig/',
-      packages=['BeautifulSoup', 'xml.sax', 'urllib2', 'urllib', 'requests', 'csv'],
+      license='gplv2',
+      url='https://github.com/kumy/pykrety',
+      requires=['BeautifulSoup', 'xml.sax', 'urllib2', 'urllib', 'requests', 'csv'],
+      packages=['pykrety', 'pykrety.parsers']
      )

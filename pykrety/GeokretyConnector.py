@@ -13,8 +13,8 @@ import urllib
 import urllib2
 
 from Geokret import Geokret, GK_CVS_COLUMNS
-from GeokretyHTMLHandler import parse_html_owned, parse_html_geokret
-from GeokretyXMLHandler import parse_xml_stream
+from parsers.GeokretyHTMLHandler import parse_html_owned, parse_html_geokret
+from parsers.GeokretyXMLHandler import parse_xml_stream
 
 
 URL = "https://geokrety.org"
@@ -227,6 +227,8 @@ class GeokretyConnector(object):
         Create a new Geokret from a Geokret instance.
         Authentication mandatory.
 
+	Todo: May upload pictures if some are defined...
+
         :param geokret: Geokret object
         :param logathome: Boolean, set the initial position to user's home
         :return: None
@@ -301,11 +303,11 @@ if __name__ == "__main__":
     login = "myusername"
     password = "mysuperpassword"
     gkConn = GeokretyConnector(login, password)
-    # gkConn.connect_api()
-    #gkConn.connect_web()
+    #gkConn.connect_api()
+    gkConn.connect_web()
 
     #gkConn.get_inventory()
-    #gkConn.get_inventory_web()
+    gkConn.get_inventory_web()
 
     #for gk in gkConn.inventory:
     #    print gk.gkid() + " -- " + unicode(gk)
@@ -318,8 +320,8 @@ if __name__ == "__main__":
 
     ##gkConn.create_geokret_web(gk46684, logathome=True)
 
-    #gkConn.write_csv('/tmp/pykrety-out.csv')
-    gkConn.read_csv('/tmp/pykrety-out.csv')
+    gkConn.write_csv('/tmp/pykrety-out.csv')
+    #gkConn.read_csv('/tmp/pykrety-out.csv')
 
     for gk in gkConn.inventory:
         print gk.gkid() + " -- " + unicode(gk)

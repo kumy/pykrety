@@ -1,4 +1,62 @@
 pykrety
 =======
 
-Python wrapper for Geokrety.org
+Python wrapper around Geokrety.org website.
+
+This is the first public version, things may change without notice.
+
+
+Notes
+=====
+
+With `GeokretyConnector`, functions ending by _web use the website and
+authenticate via cookies. Others use the API and authenticate via `secid`.
+
+
+How to use
+==========
+
+First initialize the connector.
+    gkConn = GeokretyConnector('myusername', 'mypassword')
+
+Then, connect.
+    gkConn.connect_web()
+or
+    gkConn.connect_api()
+
+Retrieve your inventory.
+    gkConn.get_inventory_web()
+or
+    gkConn.get_inventory()
+
+Retrieve someone inventory (by userid)
+    gkConn.get_inventory_web(1234)
+
+You can save 'most' geokrety informations in CSV file
+    gkConn.write_csv('/tmp/pykrety-out.csv')
+
+Of course, you can read them from CSV
+    gkConn.read_csv('/tmp/pykrety-out.csv')
+
+
+You may want to create new Geokret ;)
+    geokret = Geokret(name="My geokret")
+    geokret.set_description("My geokret long description...")
+
+    gkConn.create_geokret_web(geokret, logathome=True)
+    
+    # geokret new ID is set in object
+    print geokret.gk_id
+
+
+Some field could be updated
+    geokret.set_description("My geokret has a new description")
+    gkConn.update_geokret_web(geokret)
+
+
+Pictures could be uploaded
+    gkConn.upload_image_web(geokret, '/tmp/mygeokret_image.png',
+                            description="The picture description",
+                            avatar=True)
+
+
