@@ -17,7 +17,7 @@ GK_TYPES = {
     GK_TYPE_BOOK: u'Book/CD/DVD',
     GK_TYPE_HUMAN: u'Human',
     GK_TYPE_COIN: u'Coin',
-    GK_TYPE_STAMP: u'Stamp'
+    GK_TYPE_STAMP: u'KretyPost'
 }
 
 # Geokrety Types reverse conversion
@@ -26,7 +26,7 @@ GK_TYPES_REV = {
     u'Book/CD/DVD': GK_TYPE_BOOK,
     u'Human': GK_TYPE_HUMAN,
     u'Coin': GK_TYPE_COIN,
-    u'Stamp': GK_TYPE_STAMP,
+    u'KretyPost': GK_TYPE_STAMP,
 }
 
 # Geokrety description max chars
