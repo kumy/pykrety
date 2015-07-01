@@ -55,7 +55,7 @@ def parse_html_geokret(html):
     geokret.set_cache_count(infos_tr[i].findAll('td')[1].text)
     i += 2
 
-    flags = []
+    flags = list()
     country = None
     for flag in infos_tr[i].findAll('td')[1].findAll():
         if flag.name == 'img':
@@ -82,6 +82,7 @@ def parse_html_geokret(html):
     geokret.set_description(details_tr[i].findAll('td')[0].text)
     i += 2
 
+    geokret.images = list()
     try:
         geokret.set_featured_image(details_tr[i].findAll('td')[0].findAll('span', attrs={'class': 'obrazek_hi'})[0].a['href'])
         geokret.add_image(details_tr[i].findAll('td')[0].findAll('span', attrs={'class': 'obrazek'})[0].a['href'])

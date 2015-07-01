@@ -65,7 +65,7 @@ class Geokret(object):
     name = None
     description = None
     imagehi = None
-    images = []
+    images = None
     owner = None
     ownerid = 0
     datecreated = None
@@ -75,7 +75,7 @@ class Geokret(object):
     spotted_name = None
     spotted_type = None
     spotted_country = None
-    country_track = []
+    country_track = None
     cache_count = 0
     cache_rating = None
 
