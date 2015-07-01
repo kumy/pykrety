@@ -83,11 +83,10 @@ def parse_html_geokret(html):
     i += 2
 
     try:
-        geokret.set_featured_image(
-            details_tr[i].findAll('td')[0].findAll('span', attrs={'class': 'obrazek_hi'})[0].a['href'])
+        geokret.set_featured_image(details_tr[i].findAll('td')[0].findAll('span', attrs={'class': 'obrazek_hi'})[0].a['href'])
+        geokret.add_image(details_tr[i].findAll('td')[0].findAll('span', attrs={'class': 'obrazek'})[0].a['href'])
     except Exception, e:
         pass  # No featured image
-    geokret.add_image(details_tr[i].findAll('td')[0].findAll('span', attrs={'class': 'obrazek'})[0].a['href'])
     ### TABLE DETAILS END
 
 
