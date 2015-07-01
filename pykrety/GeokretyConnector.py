@@ -11,6 +11,7 @@ import csv
 import requests
 import urllib
 import urllib2
+import urlparse
 
 from Geokret import Geokret, GK_CVS_COLUMNS
 from parsers.GeokretyHTMLHandler import parse_html_owned, parse_html_geokret
@@ -18,6 +19,25 @@ from parsers.GeokretyXMLHandler import parse_xml_stream
 
 
 URL = "https://geokrety.org"
+
+
+def format_filename(s):
+    """
+    Take a string and return a valid filename constructed from the string.
+    Uses a whitelist approach: any characters not present in valid_chars are
+    removed. Also spaces are replaced with underscores.
+
+    Note: this method may produce invalid filenames such as ``, `.` or `..`
+    When I use this method I prepend a date string like '2009_01_15_19_46_32_'
+    and append a file extension like '.txt', so I avoid the potential of using
+    an invalid filename.
+
+    https://gist.github.com/seanh/93666
+    """
+    valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
+    filename = ''.join(c for c in s if c in valid_chars)
+    filename = filename.replace(' ','_') # I don't like spaces in filenames.
+    return filename
 
 
 class GeokretyConnector(object):
@@ -295,6 +315,31 @@ class GeokretyConnector(object):
             for row in reader:
                 geokret = Geokret(**row)
                 self.inventory.append(geokret)
+
+    def download_to_file(self, url, destination_directory):
+        """
+        Download specified url to the specified file
+
+        :param url: relative path to download file
+        :param destination: destination file
+        :return: None
+        """
+
+        filename = format_filename(os.path.basename(urlparse.urlsplit(url).path))
+
+        # make directories
+        os.makedirs(os.path.dirname(destination_directory))
+
+        # download the file
+        with open(destination_directory + '/' + filename, 'wb') as handle:
+            response = requests.get(url, stream=True)
+
+            if not response.ok:
+                raise "Failed to download: " + url
+
+            for block in response.iter_content(1024):
+                handle.write(block)
+
 
 
 if __name__ == "__main__":
