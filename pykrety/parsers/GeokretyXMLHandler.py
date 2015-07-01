@@ -6,7 +6,7 @@ Parser around XML from Geokrety.org API
 
 import xml.sax
 
-import Geokret
+from pykrety import Geokret
 
 
 class GeokretyXMLHandler(xml.sax.ContentHandler):

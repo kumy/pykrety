@@ -163,7 +163,7 @@ class Geokret(object):
         :param distance: int, distance
         :return: None
         """
-        self.distance = distance
+        self.distance = int(distance)
 
     def set_featured_image(self, image):
         """
@@ -219,7 +219,7 @@ class Geokret(object):
         :param cache_count: int, visited cache count
         :return: None
         """
-        self.cache_count = cache_count
+        self.cache_count = int(cache_count)
 
     def set_cache_rating(self, cache_rating):
         """

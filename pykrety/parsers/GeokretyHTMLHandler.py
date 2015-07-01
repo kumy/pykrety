@@ -7,7 +7,7 @@ Parser around HTML from Geokrety.org
 import BeautifulSoup
 import re
 
-import Geokret
+from pykrety import Geokret
 
 
 def parse_html_geokret(html):

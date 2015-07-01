@@ -227,7 +227,7 @@ class GeokretyConnector(object):
         Create a new Geokret from a Geokret instance.
         Authentication mandatory.
 
-	Todo: May upload pictures if some are defined...
+        Todo: May upload pictures if some are defined...
 
         :param geokret: Geokret object
         :param logathome: Boolean, set the initial position to user's home
